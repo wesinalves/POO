@@ -36,3 +36,8 @@ Para o atingimento das competências e habilidades, será utilizada na disciplin
 6. Interface Gráfica (front-end)
 7. Persistência de dados (back-end)
 8. Inteligência Artificial e Engenharia de Prompt em POO
+
+# Bibliografia Complementar
+
+[Python.org](https://docs.python.org/3.14/)
+[Python Fluente. Luciano Ramalho. 2023](https://pythonfluente.com/2/)
