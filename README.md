@@ -39,5 +39,5 @@ Para o atingimento das competências e habilidades, será utilizada na disciplin
 
 # Bibliografia Complementar
 
-[Python.org](https://docs.python.org/3.14/)
-[Python Fluente. Luciano Ramalho. 2023](https://pythonfluente.com/2/)
+* [Python.org](https://docs.python.org/3.14/)
+* [Python Fluente. Luciano Ramalho. 2023](https://pythonfluente.com/2/)
