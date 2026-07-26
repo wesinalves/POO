@@ -41,3 +41,6 @@ Para o atingimento das competências e habilidades, será utilizada na disciplin
 
 * [Python.org](https://docs.python.org/3.14/)
 * [Python Fluente. Luciano Ramalho. 2023](https://pythonfluente.com/2/)
+* [Invent Your Own Computer Games with Python. Al Sweigart. 2018](https://inventwithpython.com/)
+* [Automate the Boring Stuff with Python. Al Sweigart. 2019](https://automatetheboringstuff.com/)
+* [Learning Python. Mark Lutz. 2013](https://cfm.ehu.es/ricardo/docs/python/Learning_Python.pdf)
