@@ -59,4 +59,4 @@ git push origin <nome-da-branch>
 ![imagem de pull request](https://docs.github.com/assets/cb-34097/mw-1440/images/help/pull_requests/pull-request-compare-pull-request.webp)
 
 Leia mais sobre pull requests nas [páginas de ajuda do GitHub](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-- Agora, aguarde até que um de nós *revise seu Pull Request*! Se houver conflitos, você receberá uma notificação.
+- Agora, aguarde até *revisão do seu Pull Request*! Se houver conflitos, você receberá uma notificação.
