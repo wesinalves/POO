@@ -1,5 +1,5 @@
 # POO
-Programação Orientada a Objetos
+Programação Orientada a Objetos. Para contribuir com projetos, siga as instruções do arquivo [CONTRIBUA.md](CONTRIBUA.md).
 
 # Ementa da Disciplina:
 - Conceitos sobre Linguagens de Programação: definições, características, tipos, classificações, critérios de avaliação e principais paradigmas. 

@@ -10,10 +10,10 @@ class Complex:
         return novo
 
     def subtrair(self, complex):
-            real = self.real - complex.real
-            imag = self.imag - complex.imag
-            novo = Complex(real, imag)
-            return novo
+        real = self.real - complex.real
+        imag = self.imag - complex.imag
+        novo = Complex(real, imag)
+        return novo
 
     def imprimir(self):
          print(f"({self.real}, {self.imag})")
@@ -29,6 +29,7 @@ if __name__ == "__main__":
 
      c4 = c2.subtrair(c1)
      #c4.imprimir()
+     print(c1._x)
 
 
 
