@@ -3,7 +3,7 @@
 - Dê uma **estrela** (*Star*) neste repositório.
 - Verifique os scripts existentes no diretório `projetos`.
 - Na página do repositório [POO](https://github.com/wesinalves/POO), clique no botão **Fork**. 
-<br><img src="https://help.github.com/assets/images/help/repository/fork_button.jpg" title="Imagem do botão Fork" width="400"/>
+<br><img src="https://docs.github.com/assets/images/help/repository/fork-button.png" title="Imagem do botão Fork" width="400"/>
 - **Clone** o repositório que você acabou de fazer o *fork* para sua máquina local. Este botão mostrará a URL que você deve usar. 
 <br><img src="https://docs.github.com/assets/images/help/repository/code-button.png" title="Botão Code" width="400"/>
 
@@ -56,7 +56,7 @@ git push origin <nome-da-branch>
 
 - Vá para a página do GitHub do *seu fork* e **crie um pull request**:
 
-![imagem de pull request](https://help.github.com/assets/images/help/pull_requests/choose-base-and-compare-branches.png)
+![imagem de pull request](https://docs.github.com/assets/cb-34097/mw-1440/images/help/pull_requests/pull-request-compare-pull-request.webp)
 
 Leia mais sobre pull requests nas [páginas de ajuda do GitHub](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 - Agora, aguarde até que um de nós *revise seu Pull Request*! Se houver conflitos, você receberá uma notificação.
