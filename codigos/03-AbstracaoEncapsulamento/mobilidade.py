@@ -100,7 +100,10 @@ if __name__ == "__main__":
     # Demonstração de uso e mensagens entre objetos
     print(bike_eletrica)
     cliente.alugar_bike(bike_eletrica)
-    cliente.devolver_bike(tempo_uso=30)
+    cliente.devolver_bike(tempo_uso=200)
 
     print(cliente)
     print(bike_eletrica)
+
+    bike_eletrica.carga_bateria = 120
+    print(bike_eletrica.carga_bateria)
