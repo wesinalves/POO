@@ -18,12 +18,12 @@ def processar_nota(valor):
         print("Processamento encerrado.")
 
 
-notas = ["8.5", "7.0", "abc", "11"]
+notas = ["8.5", "7.0", "9.0", "11"]
 
 for valor in notas:
-    try:
-        nota = processar_nota(valor)
-        print(f"Nota válida: {nota}\n")
+    #try:
+    nota = processar_nota(valor)
+    print(f"Nota válida: {nota}\n")
 
-    except ValueError as e:
-        print(f"Erro: {e}\n")
+    # except ValueError as e:
+    #     print(f"Erro: {e}\n")

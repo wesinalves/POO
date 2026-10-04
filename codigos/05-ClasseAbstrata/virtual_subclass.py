@@ -1,13 +1,20 @@
-from abc import ABCMeta
+from abc import ABCMeta, abstractmethod, ABC
 
-class Person(metaclass=ABCMeta):
+class Person(ABC):
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
+    @abstractmethod
+    def get_name(self):
+        pass
+
 class Employee():
     def __init__(self, salary):
         self.salary = salary
+
+    # def get_name(self):
+    #     return super().get_name()
 
 if __name__ == "__main__":
     print(issubclass(Employee, Person))  # This will return True
