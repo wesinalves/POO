@@ -1,0 +1,26 @@
+{% load static %}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+  </head>
+  <body>
+    <div class="px-3 py-3">
+      <h1 class="text-3xl font-bold">
+        Sistema de enquetes
+      </h1>
+      <div class="mx-2 my-2 px-2 py-2 italic text-blue-600 border">
+      {% block menu %}
+      {% endblock menu %}
+      </div>
+      <div class="mx-2 my-2 px-2 py-2 rounded-md">
+      {% block main %}
+      {% endblock main %}
+      </div>
+    </div>
+  </body>
+</html>

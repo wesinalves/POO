@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block menu %}
+
+<a href="{% url 'polls:index' %}">Home</a>
+
+{% endblock menu %}
+
+{% block main %}
+<h2>Cadastro de questão</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="salvar" value="salvar" class="py-2 px-4 bg-blue-500 text-white rounded">Salvar</button>
+</form>
+{% endblock main %}

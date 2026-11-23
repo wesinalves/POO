@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block menu %}
+
+<a href="{% url 'polls:index' %}">Home</a> |
+<a href="{% url 'polls:question-add' %}">Nova questão</a> |
+<a href="{% url 'polls:question-edit' question.id %}">Editar questão</a> |
+<a href="{% url 'polls:question-delete' question.id %}">Excluir questão</a> |
+<a href="{% url 'polls:choice-add' %}">Nova opção</a>
+
+{% endblock menu %}
+
+{% block main %}
+
+{% if question %}
+<h3>{{ question.question_text }}</h3>
+{% if error_message %}
+<p class="text-red-500">{{ error_message }}</p>
+{% endif %}
+<form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %}
+    {% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
+    <button type="submit" class="py-2 px-4 bg-blue-500 text-white rounded">Votar</button>
+
+
+</form>
+{% else %}
+<p>Enquete não encontrada.</p>
+{% endif %}
+{% endblock main %}

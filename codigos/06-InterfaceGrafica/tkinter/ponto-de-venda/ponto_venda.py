@@ -12,7 +12,7 @@ estilo = {
     "highlightthickness": 0,
 }
 
-#########################
+################################
 subtotal = 0
 def cadastrar_event():
     global subtotal
@@ -30,27 +30,25 @@ def cadastrar_event():
     subtotal_valor.config(text=str(f"{subtotal:.2f}"))
 
 
-##########################
+##################################
 window = Tk()
 window.geometry("1500x900")
-window.title("Casas Brasília - Ponto de venda")
+window.title("Lojas River - Ponto de venda")
 window.config(padx=20, pady=20, bg=NAVY)
 
+########### TOPO #################
 label_caixa = Label(text="Caixa Ocupado", bg=ORANGE, foreground=NAVY, font=("Arial", 30, "bold"))
 label_caixa.grid(row=0, column=0, padx=5, pady=5)
 
-nota_fiscal = Text(height=17, width=47, **estilo, padx=5, pady=5, font=("Arial", 30, "normal"))
-nota_fiscal.insert("1.0", "Casas Brasília")
-nota_fiscal.grid(row=1, column=1, rowspan=10, padx=5, pady=5, columnspan=2)
+total_label = Label(text="Total:", bg=NAVY, foreground=ORANGE, font=("Arial", 30, "normal"))
+total_label.grid(row=0, column=1, sticky="e", padx=5, pady=5)
 
+########## CAMPOS ###############
 codigo_label = Label(text="Código Barra", bg=NAVY, foreground=ORANGE, font=("Arial", 30, "bold"))
 codigo_label.grid(row=1, column=0, sticky="sw", padx=5)
 
 codigo_entry = Entry(font=("Arial", 20, "normal"), **estilo)
 codigo_entry.grid(row=2,column=0, sticky="nw", padx=5, pady=5, ipadx=12, ipady=12)
-
-subtotal_label = Label(text="Subtotal:", bg=NAVY, foreground=ORANGE, font=("Arial", 30, "normal"))
-subtotal_label.grid(row=0, column=1, sticky="e", padx=5, pady=5)
 
 subtotal_valor = Label(text="00,00", bg=NAVY, foreground=ORANGE, font=("Arial", 30, "bold"))
 subtotal_valor.grid(row=0, column=2, sticky="w", padx=5, pady=5)
@@ -75,6 +73,11 @@ quant_label.grid(row=7, column=0, sticky="sw", padx=5)
 quant_entry = Entry(font=("Arial", 20, "normal"), **estilo)
 quant_entry.grid(row=8, column=0, sticky="nw", padx=5, pady=5, ipadx=12, ipady=12)
 
+nota_fiscal = Text(height=17, width=47, **estilo, padx=5, pady=5, font=("Arial", 30, "normal"))
+nota_fiscal.insert("1.0", "Lojas River - Nota Fiscal")
+nota_fiscal.grid(row=1, column=1, rowspan=10, padx=5, pady=5, columnspan=2)
+
+######## BOTÕES #############################
 
 insert = Button(text="Cadastrar Item", 
                 width=14, 

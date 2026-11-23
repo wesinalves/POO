@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block menu %}
+
+<a href="{% url 'polls:index' %}">Home</a> | 
+<a href="{% url 'polls:question-add' %}">Nova questão</a> |
+<a href="{% url 'polls:choice-add' %}">Nova opção</a>
+
+{% endblock menu %}
+
+{% block main %}
+{% if latest_question_list %}
+<ul>
+    {% for question in latest_question_list %}
+    <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Não há nenhuma questão</p>
+{% endif %}
+
+{% endblock main %}
